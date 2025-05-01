@@ -31,7 +31,12 @@ namespace LDtkUnity
         //todo also potentially add auto rule stuff for cool runtime art updates later
 
         public Sprite Sprite => _sprite;
-        public Tile.ColliderType Type => _type;
+        public Tile.ColliderType Type
+        {
+            get => _type;
+            set => _type = value;
+        }
+
         public int TileId => _tileId;
         
         /// <summary>
